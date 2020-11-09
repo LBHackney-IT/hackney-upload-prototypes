@@ -6,7 +6,5 @@ module.exports = eleventyConfig => {
 
   // Copy over GOV.UK assets
   eleventyConfig.addPassthroughCopy("assets");
-  
   eleventyConfig.addPassthroughCopy({ "node_modules/lbh-frontend/lbh/assets": "assets" });
-
 }

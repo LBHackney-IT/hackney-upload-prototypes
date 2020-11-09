@@ -1,0 +1,23 @@
+.lbu-service-switcher{
+    padding-bottom: 15px;
+    border-bottom: 1px solid map-get($lbh-colours, "lbh-border");
+
+    &__name{
+        margin-bottom: 10px;
+    }
+
+    &__link{
+        margin: 0;
+    }
+
+    @media screen and (min-width: 400px){
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        &__name{
+            margin-bottom: 0px;
+        }
+    }
+}

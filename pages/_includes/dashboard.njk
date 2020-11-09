@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+<div class="lbh-container">
+    <header class="lbu-service-switcher">
+        <strong class="lbu-service-switcher__name lbh-heading-h5">Housing benefit</strong>
+        <a href="/services" class="lbu-service-switcher__link">Switch service</a>
+    </header>
+</div>
+
+<!-- Phase banner goes here -->
+<!-- Announcements go here -->
+<!-- Breadcrumbs go here -->
+<div class="lbh-main-wrapper">
+    <div class="lbh-container lbu-layout">
+
+        <nav class="lbu-layout__sidebar" role="menu">
+            <ul class="lbh-list">
+                {% macro menulink(text, path) %}
+                    <li>
+                        {% if path === page.url %}
+                            <strong>
+                                <a class="lbh-link" href="{{ path }}">{{ text }}</a>
+                            </strong>
+                        {% else %}
+                            <a class="lbh-link" href="{{ path }}">{{ text }}</a>
+                        {% endif %}
+                    </li>
+                {% endmacro %}
+
+                {{ menulink("Dashboard", "/") }}
+                {{ menulink("Browse uploads", "/browse") }}
+                {{ menulink("Forms", "/forms") }}
+                {{ menulink("Team members", "/team") }}
+                {{ menulink("Settings", "/settings") }}
+                {{ menulink("API integration", "/api") }}
+            </ul>
+        </nav>
+
+        <main class="lbu-layout__pane" id="main-content" role="main">
+            {{ content | safe }}
+        </main>
+
+    </div>
+</div>
