@@ -4,6 +4,7 @@
   "description": "",
   "scripts": {
     "start": "npm-run-all --parallel dev:*",
+    "dev": "npm-run-all --parallel dev:*",
     "build": "npm-run-all prod:*",
     "dev:parcel": "parcel watch javascript/index.js -d _site/js",
     "dev:11ty": "eleventy --serve --input=pages",

@@ -2,6 +2,12 @@ $lbh-global-styles: true;
 
 @import "node_modules/lbh-frontend/lbh/all";
 
+// wider layout
+.lbh-container{
+    max-width: 1100px !important;
+}
+
 @import "service-switcher";
 @import "layout";
 @import "statboxes";
+@import "client-search";

@@ -1,0 +1,32 @@
+.lbu-client-search{
+    margin-bottom: 25px;
+
+    label{
+        font-size: 0;
+        opacity: 0;
+        left: -5000px;
+        position: absolute;
+    }
+
+    @media screen and (min-width: 500px){
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 35px;
+
+        div{
+            width: 100%;
+        }
+
+        input{
+            height: 49px;
+            padding: 13px;
+        }
+
+        button{
+            margin-top: 0;
+            margin-left: 15px;
+        }
+    }
+
+}

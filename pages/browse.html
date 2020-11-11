@@ -1,0 +1,128 @@
+---
+title: Browse uploads
+layout: dashboard
+---
+
+<h2 class="lbh-heading-h2">Browse uploads</h2>
+
+<form action="/browse" class="lbu-client-search">
+    <div class="govuk-form-group lbh-form-group">
+        <label class="govuk-label  lbh-label" for="query">Search for a client</label>
+        <input placeholder="Search for a client" class="govuk-input lbh-input" id="query" name="query"/>
+    </div>
+
+    <button type="submit" class="govuk-button lbh-button">Search</button>
+</form>
+
+<div class="govuk-tabs  lbh-tabs" data-module="govuk-tabs">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <ul class="govuk-tabs__list">
+          <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+            <a class="govuk-tabs__tab" href="#past-day">
+              To review (3)
+            </a>
+          </li>
+          <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab" href="#past-week">
+              This service (12)
+            </a>
+          </li>
+          <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab" href="#past-month">
+              All (35)
+            </a>
+          </li>
+    </ul>
+
+    <section class="govuk-tabs__panel" id="past-day">
+        <h2 class="lbh-heading-h3">To review</h2>
+        <table class="govuk-table">
+            <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="col">Case manager</th>
+                <th class="govuk-table__header" scope="col">Cases opened</th>
+                <th class="govuk-table__header" scope="col">Cases closed</th>
+            </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+                <td class="govuk-table__cell">David Francis</td>
+                <td class="govuk-table__cell">3</td>
+                <td class="govuk-table__cell">0</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <td class="govuk-table__cell">Paul Farmer</td>
+                <td class="govuk-table__cell">1</td>
+                <td class="govuk-table__cell">0</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <td class="govuk-table__cell">Rita Patel</td>
+                <td class="govuk-table__cell">2</td>
+                <td class="govuk-table__cell">0</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week">
+        <h2 class="lbh-heading-h3">This service</h2>
+        <table class="govuk-table">
+            <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="col">Case manager</th>
+                <th class="govuk-table__header" scope="col">Cases opened</th>
+                <th class="govuk-table__header" scope="col">Cases closed</th>
+            </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+                <td class="govuk-table__cell">David Francis</td>
+                <td class="govuk-table__cell">24</td>
+                <td class="govuk-table__cell">18</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <td class="govuk-table__cell">Paul Farmer</td>
+                <td class="govuk-table__cell">16</td>
+                <td class="govuk-table__cell">20</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <td class="govuk-table__cell">Rita Patel</td>
+                <td class="govuk-table__cell">24</td>
+                <td class="govuk-table__cell">27</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-month">
+            <h2 class="lbh-heading-h3">All services</h2>
+        <table class="govuk-table">
+            <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="col">Case manager</th>
+                <th class="govuk-table__header" scope="col">Cases opened</th>
+                <th class="govuk-table__header" scope="col">Cases closed</th>
+            </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+                <td class="govuk-table__cell">David Francis</td>
+                <td class="govuk-table__cell">98</td>
+                <td class="govuk-table__cell">95</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <td class="govuk-table__cell">Paul Farmer</td>
+                <td class="govuk-table__cell">122</td>
+                <td class="govuk-table__cell">131</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <td class="govuk-table__cell">Rita Patel</td>
+                <td class="govuk-table__cell">126</td>
+                <td class="govuk-table__cell">142</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+</div>
