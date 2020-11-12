@@ -1,0 +1,37 @@
+.lbu-form-list{
+    list-style: none;
+    border-top: 1px solid map-get($lbh-colours, "lbh-border");
+
+    &__item{
+        margin-top: 0px;
+        padding: 25px 0px;
+        border-bottom: 1px solid map-get($lbh-colours, "lbh-border");
+    }
+
+    &__meta{
+        color: map-get($lbh-colours, "lbh-secondary-text");
+    }
+
+    @media screen and (min-width: 700px){
+
+        &__item{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 0px;
+        }
+
+        &__meta{
+            margin-top: 10px;
+        }
+
+        &__button{
+            margin-top: 0px;
+        }
+
+
+    }
+
+
+}
