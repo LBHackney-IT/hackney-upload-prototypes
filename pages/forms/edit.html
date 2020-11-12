@@ -3,4 +3,85 @@ title: Edit a form
 layout: dashboard
 ---
 
-<h1 class="lbh-heading-h2">Forms</h1>
+<h1 class="lbh-heading-h2 lbu-breadcrumbs">
+    <a href="/forms">My example form</a>
+    <svg width="12" height="17" viewBox="0 0 12 17" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.87879 8.49999L0.939453 2.56065L3.06077 0.439331L11.1214 8.49999L3.06077 16.5607L0.939453 14.4393L6.87879 8.49999Z" fill="#0B0C0C"/>
+    </svg>
+    Edit
+</h1>
+
+<form action="/forms">
+
+    <div class="govuk-form-group lbh-form-group">
+        <label class="govuk-label lbh-label" for="email">Name</label>
+        <input class="govuk-input lbh-input govuk-input--width-20" id="email" name="email"/>
+    </div>
+
+    <div class="govuk-form-group lbh-form-group">
+        <label class="govuk-label lbh-label" for="instructions">Instructions</label>
+        <textarea class="govuk-textarea lbh-textarea" id="instructions" name="instructions" rows="3"></textarea>
+    </div>
+
+
+
+
+<div class="govuk-form-group lbh-form-group">
+    <fieldset class="govuk-fieldset">
+        <legend class="govuk-fieldset__legend">
+            <h2 class="govuk-fieldset__heading">
+                Common evidence
+            </h2>
+        </legend>
+        <div class="govuk-checkboxes  lbh-checkboxes">
+
+            <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="common-evidence-1" name="common-evidence" type="checkbox" value="1" aria-describedby="common-evidence-1-hint">
+                <label class="govuk-label govuk-checkboxes__label" for="common-evidence-1">
+                    Proof of identity
+                </label>
+                <span id="common-evidence-1-hint" class="govuk-hint govuk-checkboxes__hint  lbh-hint">
+                    Valid passport or driving license
+                </span>
+            </div>
+
+            <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="common-evidence-2" name="common-evidence" type="checkbox" value="2" aria-describedby="common-evidence-2-hint">
+                <label class="govuk-label govuk-checkboxes__label" for="common-evidence-2">
+                    Proof of address
+                </label>
+                <span id="common-evidence-2-hint" class="govuk-hint govuk-checkboxes__hint  lbh-hint">
+                    From the last three months
+                </span>
+            </div>
+
+            <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="common-evidence-3" name="common-evidence" type="checkbox" value="3" aria-describedby="common-evidence-3-hint">
+                <label class="govuk-label govuk-checkboxes__label" for="common-evidence-3">
+                    Example evidence type
+                </label>
+                <span id="common-evidence-3-hint" class="govuk-hint govuk-checkboxes__hint  lbh-hint">
+                    From the last three months
+                </span>
+            </div>
+
+        </div>
+    </fieldset>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <button type="submit" class="govuk-button lbh-button">Save</button>
+</form>
+
+<p><a href="#">Preview form</a></p>

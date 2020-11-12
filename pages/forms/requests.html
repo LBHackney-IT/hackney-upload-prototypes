@@ -1,0 +1,53 @@
+---
+title: Edit a form
+layout: dashboard
+---
+
+<h1 class="lbh-heading-h2 lbu-breadcrumbs">
+    <a href="/forms">My example form</a>
+    <svg width="12" height="17" viewBox="0 0 12 17" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.87879 8.49999L0.939453 2.56065L3.06077 0.439331L11.1214 8.49999L3.06077 16.5607L0.939453 14.4393L6.87879 8.49999Z" fill="#0B0C0C"/>
+    </svg>
+    Requests
+</h1>
+
+<h2 class="lbh-heading-h3">New request</h2>
+
+<form>
+
+    <div class="govuk-form-group lbh-form-group">
+        <label class="govuk-label lbh-label" for="name">Name</label>
+        <input class="govuk-input lbh-input govuk-input--width-20" id="name" name="name"/>
+    </div>
+
+    <div class="govuk-form-group lbh-form-group">
+        <label class="govuk-label lbh-label" for="email">Email</label>
+        <input class="govuk-input lbh-input govuk-input--width-20" id="email" name="email"/>
+    </div>
+
+    <div class="govuk-form-group lbh-form-group">
+        <label class="govuk-label lbh-label" for="phone">Phone number</label>
+        <input class="govuk-input lbh-input govuk-input--width-20" id="phone" name="phone"/>
+    </div>
+
+    <div class="govuk-checkboxes  lbh-checkboxes">
+        <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="by-sms" name="by-sms" type="checkbox">
+            <label class="govuk-label govuk-checkboxes__label" for="by-sms">
+                Send request by SMS
+            </label>
+        </div>
+
+        <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="by-email" name="by-email" type="checkbox">
+            <label class="govuk-label govuk-checkboxes__label" for="by-email">
+                Send request by email
+            </label>
+        </div>
+    </div>
+
+    <button type="submit" class="govuk-button lbh-button">Send</button>
+</form>
+
+
+<h2 class="lbh-heading-h3">Pending requests</h2>
