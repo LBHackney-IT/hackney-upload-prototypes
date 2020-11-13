@@ -1,0 +1,40 @@
+---
+title: About you
+layout: public
+---
+
+<div class="lbh-container">
+    <a href="/resident" class="govuk-back-link  lbh-back-link">Back</a>
+    
+    <main class="lbh-main-wrapper" id="main-content" role="main">
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+
+                <h1>About you</h1>
+
+                <p>We need some details so we can associate this evidence with you.</p>
+
+                <form action="/resident/upload">
+
+                    <div class="govuk-form-group lbh-form-group">
+                        <label class="govuk-label lbh-label" for="name">Full name</label>
+                        <input class="govuk-input lbh-input govuk-input--width-20" id="name" name="name"/>
+                    </div>
+
+                    <div class="govuk-form-group lbh-form-group">
+                        <label class="govuk-label lbh-label" for="email">Email</label>
+                        <input class="govuk-input lbh-input govuk-input--width-20" id="email" name="email"/>
+                    </div>
+
+                    <div class="govuk-form-group lbh-form-group">
+                        <label class="govuk-label lbh-label" for="phone">Phone number</label>
+                        <input class="govuk-input lbh-input govuk-input--width-20" id="phone" name="phone"/>
+                    </div>
+
+                    <button type="submit" class="govuk-button lbh-button">Continue</button>
+                </form>
+
+            </div>
+        </div>
+    </main>
+</div>

@@ -1,0 +1,14 @@
+.lbu-uploader-panel{
+    border: 1px solid map-get($lbh-colours, "lbh-border");
+    border-left: 4px solid map-get($lbh-colours, "lbh-panel");
+    padding: 25px;
+
+    label{
+        font-weight: 700;
+    }
+
+
+    input{
+        margin-top: 10px;
+    }
+}
