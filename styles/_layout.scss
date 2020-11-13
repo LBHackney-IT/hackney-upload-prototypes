@@ -34,7 +34,7 @@
     }
 }
 
-.lbu-delete-link:link{
+.lbu-red-link:link{
     margin-left: 10px;
     color: map-get($lbh-colours, "lbh-error");
     &:focus{
