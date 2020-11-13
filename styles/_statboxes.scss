@@ -5,6 +5,10 @@
         padding: 25px;
     }
 
+    &__caption{
+        margin-top: 10px;
+    }
+
     @media screen and (min-width: 900px){
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
