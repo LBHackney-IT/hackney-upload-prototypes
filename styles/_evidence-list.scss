@@ -1,0 +1,56 @@
+.lbu-evidence-list{
+    list-style: none;
+
+    &__item{
+        margin-top: 0px;
+        padding: 25px 0px;
+        border-top: 1px solid map-get($lbh-colours, "lbh-border");
+
+        &:last-of-type{
+            border-bottom: 1px solid map-get($lbh-colours, "lbh-border");
+        }
+    }
+
+    &__preview{
+        font-family: "Open Sans";
+        background: map-get($lbh-colours, "lbh-panel");
+        height: 112px;
+        width: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media screen and (min-width: 700px){
+
+        div {
+            margin-top: 0px;
+        }
+
+        &__preview{
+            margin-right: 35px;
+        }
+
+        &__item{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        &__actions{
+            margin-left: auto;
+        }
+
+        &__meta{
+            margin-top: 10px;
+        }
+
+        &--two-columns{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 25px;
+        }
+
+    }
+}

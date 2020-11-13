@@ -34,9 +34,12 @@
     }
 }
 
-.lbu-red-link:link{
+a.lbu-red-link{
     margin-left: 10px;
     color: map-get($lbh-colours, "lbh-error");
+    &:visited{
+        color: map-get($lbh-colours, "lbh-error");
+    }
     &:focus{
         color: inherit;
     }
