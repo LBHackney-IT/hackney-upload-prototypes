@@ -4,7 +4,7 @@ layout: dashboard
 ---
 
 <h1 class="lbh-heading-h2 lbu-breadcrumbs">
-    <a href="/forms">My example form</a>
+    <a href="/dashboard/forms">My example form</a>
     <svg width="12" height="17" viewBox="0 0 12 17" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M6.87879 8.49999L0.939453 2.56065L3.06077 0.439331L11.1214 8.49999L3.06077 16.5607L0.939453 14.4393L6.87879 8.49999Z" fill="#0B0C0C"/>
     </svg>
@@ -51,3 +51,54 @@ layout: dashboard
 
 
 <h2 class="lbh-heading-h3">Pending requests</h2>
+
+<table class="govuk-table lbu-client-table">
+    <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+        <th class="govuk-table__header" scope="col">Name</th>
+        <th class="govuk-table__header" scope="col">Contact details</th>
+        <th class="govuk-table__header" scope="col">Requested</th>
+        <th class="govuk-table__header" scope="col">
+            <span class="lbu-visually-hidden">Actions</span>
+        </th>
+    </tr>
+    </thead>
+    <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+            <td class="govuk-table__cell">David Francis</td>
+            <td class="govuk-table__cell lbh-body-s">
+                firstname.surname@email.com
+                <br/>
+                0777 777 7777
+            </td>
+            <td class="govuk-table__cell">2 days ago</td>
+            <td class="govuk-table__cell">
+                <a href="#" class="govuk-button lbh-button govuk-button--secondary lbh-button--secondary">Remind</a>
+            </td>
+        </tr>
+        <tr class="govuk-table__row">
+            <td class="govuk-table__cell">Roman Mars</td>
+            <td class="govuk-table__cell lbh-body-s">
+                example@email.com
+                <br/>
+                0777 777 7777
+            </td>
+            <td class="govuk-table__cell">6 days ago</td>
+            <td class="govuk-table__cell">
+                <a href="#" class="govuk-button lbh-button govuk-button--secondary lbh-button--secondary">Remind</a>
+            </td>
+        </tr>
+        <tr class="govuk-table__row">
+            <td class="govuk-table__cell">Avery Trufelman</td>
+            <td class="govuk-table__cell lbh-body-s">
+                firstname.surname@email.com
+                <br/>
+                0777 777 7777
+            </td>
+            <td class="govuk-table__cell">5 weeks ago</td>
+            <td class="govuk-table__cell">
+                <a href="#" class="govuk-button lbh-button govuk-button--secondary lbh-button--secondary">Remind</a>
+            </td>
+        </tr>
+    </tbody>
+</table>

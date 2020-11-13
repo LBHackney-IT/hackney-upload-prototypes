@@ -8,10 +8,6 @@
         border-bottom: 1px solid map-get($lbh-colours, "lbh-border");
     }
 
-    &__meta{
-        color: map-get($lbh-colours, "lbh-secondary-text");
-    }
-
     @media screen and (min-width: 700px){
 
         &__item{
@@ -30,8 +26,5 @@
             margin-top: 0px;
         }
 
-
     }
-
-
 }
