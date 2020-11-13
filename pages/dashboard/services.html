@@ -1,51 +1,7 @@
-<!DOCTYPE html>
-<html lang="en" class="govuk-template lbh-template app-no-canvas-background">
-<head>
-    <meta charset="utf-8">
-    <title>{{ title }} | Hackney Council</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="theme-color" content="#0b0c0c"> 
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/assets/images/favicon.ico" type="image/x-icon">
-    <link rel="mask-icon" href="/assets/images/govuk-mask-icon.svg" color="#0b0c0c"> 
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/lbh-apple-touch-icon-180x180.png">
-    <link rel="apple-touch-icon" sizes="167x167" href="/assets/images/lbh-apple-touch-icon-167x167.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/lbh-apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" href="/assets/images/lbh-apple-touch-icon.png">
-
-    <!--[if !IE 8]><!-->
-      <link rel="stylesheet" href="/styles/style.css">
-    <!--<![endif]-->
-    <!--[if IE 8]>
-      <link rel="stylesheet" href="/public/app-ie8.css">
-    <![endif]-->
-    <!--[if lt IE 9]>
-      <script src="/vendor/html5-shiv/html5shiv.js"></script>
-    <![endif]-->
-
-    <meta property="og:image" content="/assets/images/lbh-opengraph-image.png">
-</head>
-<body class="govuk-template__body ">
-    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
-
-    <a href="#main-content" class="govuk-skip-link  lbh-skip-link">Skip to main content</a>
-
-    <section class="lbh-cookie-banner" data-module="lbh-cookie-banner">
-        <div class="lbh-container">
-            <div class="govuk-grid-row">
-                <div class="lbh-cookie-banner__content govuk-grid-column-two-thirds-from-desktop">
-                    <p>We use cookies to ensure you have the best experience. For full details see our <a href="#">Cookie policy</a>.</p>
-                </div>
-                <div class="lbh-cookie-banner__button-wrapper govuk-grid-column-one-third-from-desktop">
-                    <button type="button" class="govuk-button lbh-cookie-banner__button lbh-button govuk-button--secondary lbh-button--secondary" data-module="govuk-button" data-behavior="lbh-cookie-close">
-                        Accept and close
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
+---
+title: Choose a service
+layout: base
+---
 
     <header class="lbh-header  ">
       <div class="lbh-header__main">
@@ -88,8 +44,34 @@
       </div>
     </header>
 
-    {{ content | safe }}
+<div class="lbh-container">
+    <header class="lbu-service-switcher">
+        <strong class="lbu-service-switcher__name lbh-heading-h5">
+            <a href="/dashboard" class="lbu-service-switcher__link">Back to Housing benefit</a>
+        </strong>
+    </header>
+</div>
 
-    <script src="/js/index.js"></script>
-</body>
-</html>
+<div class="lbh-main-wrapper" id="main-content" role="main">
+    <div class="lbh-container">
+        <h1 class="lbh-heading-h1">Choose a service</h1>
+
+        <ul class="lbh-list">
+            <li class="govuk-!-font-size-24">
+                <a href="/dashboard" class="lbh-link">Housing benefit</a>
+            </li>
+            <li class="govuk-!-font-size-24">
+                <a href="#" class="lbh-link">Benefit overpayments</a>
+            </li>
+            <li class="govuk-!-font-size-24">
+                <a href="#" class="lbh-link">Free school meals</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
