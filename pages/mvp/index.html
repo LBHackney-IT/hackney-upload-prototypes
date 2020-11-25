@@ -1,0 +1,85 @@
+---
+title: Browse residents
+layout: dashboard-mvp
+---
+
+<h1 class="lbh-heading-h2">Residents</h1>
+
+<form class="lbu-client-search">
+    <div class="govuk-form-group lbh-form-group">
+        <label class="lbu-visually-hidden" for="query">Search for a resident</label>
+        <input placeholder="Search by name, email or phone number" class="govuk-input lbh-input" id="query" name="query"/>
+    </div>
+
+    <button type="submit" class="govuk-button lbh-button">Search</button>
+</form>
+
+<div class="govuk-tabs  lbh-tabs" data-module="govuk-tabs">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <ul class="govuk-tabs__list">
+          <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+            <a class="govuk-tabs__tab" href="#past-day">
+              To review (3)
+            </a>
+          </li>
+          <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab" href="#past-month">
+              All (35)
+            </a>
+          </li>
+    </ul>
+
+    <section class="govuk-tabs__panel" id="past-day">
+        <h2 class="lbh-heading-h3">To review</h2>
+        <table class="govuk-table lbu-client-table">
+            <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="col">Name</th>
+                <th class="govuk-table__header" scope="col">Document</th>
+                <th class="govuk-table__header" scope="col">Uploaded</th>
+                <th class="govuk-table__header" scope="col">
+                    <span class="lbu-visually-hidden">Actions</span>
+                </th>
+            </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">David Francis</td>
+                    <td class="govuk-table__cell">
+                        Passport
+                    </td>
+                    <td class="govuk-table__cell">2 days ago</td>
+                    <td class="govuk-table__cell">
+                        <a href="/mvp/resident" class="govuk-button lbh-button">Review</a>
+                    </td>
+                </tr>
+                <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">Roman Mars</td>
+                    <td class="govuk-table__cell">
+                        Passport
+                    </td>
+                    <td class="govuk-table__cell">6 days ago</td>
+                    <td class="govuk-table__cell">
+                        <a href="/mvp/resident" class="govuk-button lbh-button">Review</a>
+                    </td>
+                </tr>
+                <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">Avery Trufelman</td>
+                    <td class="govuk-table__cell">
+                        Utility bill
+                    </td>
+                    <td class="govuk-table__cell">5 weeks ago</td>
+                    <td class="govuk-table__cell">
+                        <a href="/mvp/resident" class="govuk-button lbh-button">Review</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-month">
+        <h2 class="lbh-heading-h3">All services</h2>
+    </section>
+</div>

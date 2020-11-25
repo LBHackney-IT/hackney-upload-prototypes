@@ -1,0 +1,76 @@
+---
+title: New request
+layout: dashboard-mvp
+---
+
+<h1 class="lbh-heading-h2">Make a new request</h1>
+
+<form>
+
+    <div class="govuk-form-group lbh-form-group">
+        <label class="govuk-label lbh-label" for="name">Name</label>
+        <input class="govuk-input lbh-input govuk-input--width-20" id="name" name="name"/>
+    </div>
+
+    <div class="govuk-form-group lbh-form-group">
+        <label class="govuk-label lbh-label" for="email">Email</label>
+        <input class="govuk-input lbh-input govuk-input--width-20" id="email" name="email"/>
+    </div>
+
+    <div class="govuk-form-group lbh-form-group">
+        <label class="govuk-label lbh-label" for="phone">Phone number</label>
+        <input class="govuk-input lbh-input govuk-input--width-20" id="phone" name="phone"/>
+    </div>
+
+    <div class="govuk-checkboxes  lbh-checkboxes">
+        <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="by-sms" name="by-sms" type="checkbox">
+            <label class="govuk-label govuk-checkboxes__label" for="by-sms">
+                Send request by SMS
+            </label>
+        </div>
+
+        <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="by-email" name="by-email" type="checkbox">
+            <label class="govuk-label govuk-checkboxes__label" for="by-email">
+                Send request by email
+            </label>
+        </div>
+    </div>
+
+
+
+<div class="govuk-form-group lbh-form-group">
+<fieldset class="govuk-fieldset">
+  <legend class="govuk-fieldset__legend">
+    What document do you want to request?
+  </legend>
+  <div class="govuk-radios  lbh-radios">
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="example-divider" name="example" type="radio" value="governement-gateway">
+          <label class="govuk-label govuk-radios__label" for="example-divider">
+        Passport
+      </label>
+        </div>
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="example-divider-2" name="example" type="radio" value="govuk-verify">
+          <label class="govuk-label govuk-radios__label" for="example-divider-2">
+            Driving license
+        </label>
+        </div>
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="example-divider-4" name="example" type="radio" value="create-account">
+          <label class="govuk-label govuk-radios__label" for="example-divider-4">
+        Bank statement
+      </label>
+        </div>
+  </div>
+</fieldset>
+</div>
+
+
+
+
+
+    <button type="submit" class="govuk-button lbh-button">Send</button>
+</form>
