@@ -1,0 +1,21 @@
+.lbu-actions {
+  margin-bottom: 35px;
+  *:first-child {
+    margin-right: 10px;
+  }
+}
+
+.lbu-preview {
+margin-top: 20px;
+margin-bottom: 35px;
+
+  img {
+
+    background-color: #f3f2f1;
+    max-width: 100%;
+  }
+
+  figcaption{
+      margin-top: 0;
+  }
+}
