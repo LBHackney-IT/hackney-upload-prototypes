@@ -5,13 +5,18 @@ $lbh-global-styles: true;
 @import "node_modules/lbh-frontend/lbh/all";
 
 // wider layout
-.lbh-container{
-    max-width: 1100px !important;
+.lbh-container {
+  max-width: 1100px !important;
 }
 
 // stick phase banner to top of screen properly
-.lbh-phase-banner{
-    margin-top: 0px;
+.lbh-phase-banner {
+  margin-top: 0px;
+}
+
+.lbh-select {
+  max-width: 41ex;
+  width: 41ex;
 }
 
 // dashboard
